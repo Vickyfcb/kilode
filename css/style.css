@@ -164,10 +164,10 @@ nav{
     justify-content: space-between;
     padding: var(--mb-1) 0;
     padding-top: var(--mb-2-5);
-    /* position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
-    background-color: transparent; */
+    background-color: transparent;
 }
 .nav__logo-img{
     width: 50%;
