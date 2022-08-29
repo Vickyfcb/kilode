@@ -171,6 +171,7 @@
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-bottom: 2rem;
+    z-index: 100;
 }
 .nav__logo-img{
     width: 50%;
@@ -186,7 +187,7 @@
 }
 .nav__toggle{
     display: inline-flex;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     cursor: pointer;
 }
 @media screen and (max-width:767px) {
@@ -205,7 +206,7 @@
     }
 }
 .nav__close{
-    font-size: 2rem;
+    font-size: 1.5rem;
     position: absolute;
     top: 1rem;
     right: 1.25rem;
@@ -276,10 +277,26 @@
 .second__container{
     row-gap: 2rem;
 }
+.second__img-box{
+    position: relative;
+    margin-bottom: 12rem;
+}
 .second__img{
     width: 296px;
     justify-self: left;
     border-radius: .5rem;
+    position: absolute;
+    z-index: 10;
+}
+.second__box{
+    height: 197px;
+    width: 296px;
+    background-color: var(--first-color);
+    border-radius: .5rem;
+    position: absolute;
+    z-index: 1;
+    margin-left: .4rem;
+    margin-top: .4rem;
 }
 .second__title{
     font-size: 1.5rem;
@@ -364,6 +381,12 @@
     .nav__logo-img{
         width: 30%;
     }
+    .second__container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .second__description{
+        margin-bottom: 1rem;
+    }
     .third__contents{
         grid-template-columns: repeat(2,1fr);
     }
@@ -423,6 +446,10 @@
     .second__container{
         grid-template-columns: repeat(2,1fr);
         column-gap: 2rem;
+    }
+    .second__box{
+        width: 350px;
+        height: 233.33px;
     }
     .second__img{
         width: 350px;
