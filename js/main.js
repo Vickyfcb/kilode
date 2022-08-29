@@ -36,3 +36,11 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
     //if(this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
 //window.addEventListener('scroll', scrollHeader)
 }
+const nav = document.queryselector('nav');
+window.addeventlistener('scroll', () => {
+    if (window.scrollY >= 50) {
+        nav.classlist.add('active-nav');
+    } else {
+        nav.classlist.remove('active-nav');
+    }
+})
