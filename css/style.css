@@ -241,6 +241,17 @@ nav{
     background-color: var(--first-color);
 }
 /*  change background header */
+.active_nav {
+    background-color: var(--first-color);
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .6);
+}
+/* .active_nav .nav_links a,
+.active_nav .logo {
+    color: #0e0e0e;
+}
+.active_nav .nav_links a:hover {
+    color: #fff;
+} */
 /* ======== home ============== */
 .home__data{
     width: 80%;
