@@ -164,10 +164,10 @@ nav{
     justify-content: space-between;
     padding: var(--mb-1) 0;
     padding-top: var(--mb-2-5);
-    position: fixed;
+/*     position: fixed;
     top: 0;
     left: 0;
-    background-color: transparent;
+    background-color: transparent; */
 }
 .nav__logo-img{
     width: 50%;
@@ -241,10 +241,10 @@ nav{
     background-color: var(--first-color);
 }
 /*  change background header */
-.active_nav {
+/* .active_nav {
     background-color: var(--first-color);
     box-shadow: 0 0 .5rem rgba(0, 0, 0, .6);
-}
+} */
 /* .active_nav .nav_links a,
 .active_nav .logo {
     color: #0e0e0e;
