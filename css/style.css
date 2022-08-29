@@ -375,6 +375,10 @@
         font-size: 2.3rem;
         line-height: 40px;
     }
+    .second__box{
+        width: 248px;
+        height: 165px;
+    }
 }
 /* for medium devices */
 @media screen and (min-width:576px) {
@@ -387,6 +391,7 @@
     .second__description{
         margin-bottom: 1rem;
     }
+    
     .third__contents{
         grid-template-columns: repeat(2,1fr);
     }
