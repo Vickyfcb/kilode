@@ -152,10 +152,12 @@
     background-image: linear-gradient(rgba(1, 71, 70, 0.78),rgba(1, 71, 70, 0.78)),
                       url(header-img.jpg);
     background-position: center;
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;  
-    padding-bottom: 2rem;                   
+    padding-bottom: 2rem;               
 }
 .nav{
     height: var(--header-height);
@@ -187,7 +189,7 @@
 }
 .nav__toggle{
     display: inline-flex;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 @media screen and (max-width:767px) {
@@ -206,7 +208,7 @@
     }
 }
 .nav__close{
-    font-size: 1.5rem;
+    font-size: 2rem;
     position: absolute;
     top: 1rem;
     right: 1.25rem;
@@ -277,26 +279,12 @@
 .second__container{
     row-gap: 2rem;
 }
-.second__img-box{
-    position: relative;
-    margin-bottom: 12rem;
-}
 .second__img{
     width: 296px;
     justify-self: left;
     border-radius: .5rem;
-    position: absolute;
     z-index: 10;
-}
-.second__box{
-    height: 197px;
-    width: 296px;
-    background-color: var(--first-color);
-    border-radius: .5rem;
-    position: absolute;
-    z-index: 1;
-    margin-left: .4rem;
-    margin-top: .4rem;
+    box-shadow: 8px 8px 0px 0 var(--first-color);
 }
 .second__title{
     font-size: 1.5rem;
@@ -375,9 +363,9 @@
         font-size: 2.3rem;
         line-height: 40px;
     }
-    .second__box{
-        width: 248px;
-        height: 165px;
+    .second__img{
+        width: 90%;
+        box-shadow: 5px 5px 0px 0 var(--first-color);
     }
 }
 /* for medium devices */
@@ -385,9 +373,9 @@
     .nav__logo-img{
         width: 30%;
     }
-    .second__container{
+    /* .second__container{
         grid-template-columns: repeat(2,1fr);
-    }
+    } */
     .second__description{
         margin-bottom: 1rem;
     }
@@ -487,5 +475,8 @@
     }
     .nav__logo-img{
         width: 20%;
+    }
+    .third__contents{
+        grid-template-columns: repeat(3,1fr);
     }
 }
